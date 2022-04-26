@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Rating Component</title>
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="/scripts/scripts.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="rating-container">
+        <div class="star">
+          <img src="/images/icon-star.svg" alt="star" />
+        </div>
+        <h1>How did we do?</h1>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <div class="radio-buttons">
+          <input type="radio" name="rating" id="1" value="1" />
+          <label for="1">1</label>
+          <input type="radio" name="rating" id="2" value="2" />
+          <label for="2">2</label>
+          <input type="radio" name="rating" id="3" value="3" />
+          <label for="3">3</label>
+          <input type="radio" name="rating" id="4" value="4" />
+          <label for="4">4</label>
+          <input type="radio" name="rating" id="5" value="5" />
+          <label for="5">5</label>
+        </div>
+        <button onclick="submitRating()">Submit</button>
+      </div>
+      <div class="error-container invisible">
+        <p>Please select a rating</p>
+      </div>
+      <div class="thankyou-container">
+        <div class="thankyou-image">
+          <img
+            src="/images/illustration-thank-you.svg"
+            alt="thank you illustration"
+          />
+        </div>
+        <div class="thankyou-content">
+          <p class="thankyou-selected">You selected _ out of 5</p>
+          <h2>Thank you!</h2>
+          <p>
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
